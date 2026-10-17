@@ -1,0 +1,11 @@
+# Remote817
+- First page: Keyboard now sits where Home was (next to Back); Home sits where Mic was; Mic sits where Keyboard was. Row 2 = Mute | Home | Mic | More.
+- Battery: screen off / app in background -> Bluetooth keep-alive + reconnect timers stop at once; after 20 s the TV link is closed, TV discovery + Wi-Fi multicast lock stop, mic stops, WebView JS timers are frozen. Coming back reconnects to the TV automatically (no toast).
+- Battery (screen on): TV discovery backs off 8/15/30/60/120 s and stops by itself once a TV is found or connected (was every 8 s forever, 48 threads). Bluetooth PC reconnect tries ~2 min then waits (was forever).
+- JS 4 s keep-alive timer is cleared while the page is hidden.
+- Signed with the same remote65 key: installs over Remote816.
+- OTG: USB gamepad via OTG cable works on the Game pad screen (PC/Bluetooth mode and TV mode). Polled only while that screen is open and a pad is plugged in.
+- Game pad screen: visible OTG chip in the top bar (green 'OTG ✓' when a USB pad is detected; tap for status). Works for PC (Bluetooth) and TV mode.
+- New 'White' theme (Settings > Theme): a separate clean professional light design (white buttons with soft shadows, silver scroll bars, light overlays/cast/mouse/gamepad screens) instead of just recolouring the dark one. Old 'Off-White' choice now maps to White.
+- White theme made softer (light gray-blue surfaces instead of pure white).
+- White theme: buttons pure white again, background grey.
